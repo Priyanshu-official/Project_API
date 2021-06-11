@@ -3,15 +3,15 @@ const mongoose = require('mongoose')
 const router = require('./routes/project_Item')
 var app = express()
 
-const cors = require('cors')
+const cors = require("cors");
 
 app.use(cors())
 
 //Route
 app.get('/',function(req,res){
-  res.send("Hello World")
+  res.send("Hello Priyanshu!")
 })
-
+//oka but where you wrote that code 
 app.use('/project_Item',router)
 
 //MongoDB connection
